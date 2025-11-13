@@ -1,4 +1,5 @@
 import SideMenu from "./SideMenu.jsx";
+import corkTexture from "./assets/cork.png";
 import PageBackground from "./PageBackground.jsx";
 import blogLight from "./assets/backgrounds/blog-light.png";
 import blogDark from "./assets/backgrounds/blog-dark.png";
@@ -26,7 +27,7 @@ export default function BlogPage({ theme, setTheme }) {
         <main
           className="flex-grow max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10"
           style={{
-            backgroundImage: `url(src/assets/cork.png)`,
+            backgroundImage: `url(${corkTexture})`,
             backgroundBlendMode: "multiply",
             backgroundSize: "350px 350px",
             backgroundRepeat: "repeat",
