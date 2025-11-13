@@ -3,7 +3,7 @@ import PageBackground from "./PageBackground.jsx";
 import blogLight from "./assets/backgrounds/blog-light.png";
 import blogDark from "./assets/backgrounds/blog-dark.png";
 import { Linkedin, Github, Mail } from "lucide-react";
-import { Link } from "react-router-dom";  
+import { Link } from "react-router-dom";
 import { getAllPosts } from "./utils/loadPosts.js";
 import { marked } from "marked";
 
@@ -23,29 +23,73 @@ export default function BlogPage({ theme, setTheme }) {
         </header>
 
         {/* Main Content */}
-        <main className="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
-          {posts.map((post, idx) => (
-            <article
-              key={idx}
-              className="border border-latte-surface2 dark:border-mocha-surface2 rounded-2xl p-6 bg-latte-surface0 dark:bg-mocha-surface0 shadow-md hover:shadow-lg transition"
-            >
-              <h2 className="text-2xl font-semibold text-latte-mauve dark:text-mocha-mauve mb-2">
-                {post.title}
-              </h2>
-              <p className="text-sm text-latte-subtext1 dark:text-mocha-subtext1 mb-3">
-                {post.date}
-              </p>
-              <p className="text-latte-subtext1 dark:text-mocha-subtext1 mb-4">
-                {post.description}
-              </p>
-              <Link
-                to={`/blog/${post.slug}`}
-                className="text-latte-mauve dark:text-mocha-mauve hover:underline font-medium"
-              >
-                Read More →
-              </Link>
-            </article>
-          ))}
+        <main
+          className="flex-grow max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10"
+          style={{
+            backgroundImage: `url(/src/assets/textures/cork.png)`,
+            backgroundBlendMode: "multiply",
+            backgroundSize: "350px 350px",
+            backgroundRepeat: "repeat",
+            backgroundPosition: "center",
+            border: "15px solid #5C3E2B", // thin brown frame
+            borderRadius: "3rem",
+            boxShadow:
+              "0 4px 10px rgba(0,0,0,0.25), inset 0 0 15px rgba(0,0,0,0.25)",
+          }}
+        >
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+            {posts.map((post, idx) => {
+              // Rand pin color 
+              const pinColors = ["#E06C75", "#1E90FF", "#EBA937", "#9966CC", "#4b0082", "#FFFFFF", "#a4c639", "#bf94e4"]; // D. H. A. R. I. W. A. L.
+              const pinColor = pinColors[idx % pinColors.length]; // cycle through colors
+
+              // Slight random rotation for variety
+              const rotation = `${Math.random() * 6 - 3}deg`;
+
+              return (
+                <article
+                  key={idx}
+                  className="sticky-note relative p-6 shadow-lg transition-transform duration-500 hover:rotate-0 hover:scale-105 cursor-pointer"
+                  style={{
+                    backgroundColor:
+                      idx % 3 === 0
+                        ? "#F9E2AF" // yellow
+                        : idx % 3 === 1
+                        ? "#E8A2AF" // pink
+                        : "#A6E3A1", // green
+                    rotate: rotation,
+                    borderRadius: "0.5rem",
+                    transformOrigin: "top center",
+                    animation: `sway-${idx % 5} 6s ease-in-out infinite`,
+                  }}
+                >
+                  {/* 📍 Pin */}
+                  <div
+                    className="absolute top-3 left-1/2 -translate-x-1/2 rounded-full shadow-md"
+                    style={{
+                      width: "14px",
+                      height: "14px",
+                      backgroundColor: pinColor,
+                      boxShadow: "0 3px 3px rgba(0,0,0,0.4)", // pin drop shadow
+                      border: "1px solid rgba(0,0,0,0.2)",
+                    }}
+                  ></div>
+
+                  {/* 📝 Note content */}
+                  <h2 className="text-xl font-semibold mb-1">{post.title}</h2>
+                  <p className="text-xs mb-2">{post.date}</p>
+                  <p className="text-sm mb-4">{post.description}</p>
+                  <Link
+                    to={`/blog/${post.slug}`}
+                    className="font-medium hover:underline"
+                    style={{ color: "#8839EF" }}
+                  >
+                    Read More →
+                  </Link>
+                </article>
+              );
+            })}
+          </div>
         </main>
 
         {/* Footer */}
