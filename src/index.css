@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional global tweaks (you can add these after the Tailwind directives) */
+:root {
+  --font-sans: ui-sans-serif, system-ui, Inter, Segoe UI, Roboto, Helvetica, Arial,
+    Apple Color Emoji, Segoe UI Emoji;
+}
+
+/* Apply your default font */
+html {
+  font-family: var(--font-sans);
+}
+
+/* (Optional) Give the body a nice background transition between light/dark */
+body {
+  @apply bg-zinc-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100 transition-colors duration-300;
+}
+
