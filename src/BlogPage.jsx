@@ -26,7 +26,7 @@ export default function BlogPage({ theme, setTheme }) {
         <main
           className="flex-grow max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10"
           style={{
-            backgroundImage: `url(/src/assets/textures/cork.png)`,
+            backgroundImage: `url(src/assets/cork.png)`,
             backgroundBlendMode: "multiply",
             backgroundSize: "350px 350px",
             backgroundRepeat: "repeat",
