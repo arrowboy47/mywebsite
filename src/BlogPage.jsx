@@ -3,32 +3,12 @@ import PageBackground from "./PageBackground.jsx";
 import blogLight from "./assets/backgrounds/blog-light.png";
 import blogDark from "./assets/backgrounds/blog-dark.png";
 import { Linkedin, Github, Mail } from "lucide-react";
+import { Link } from "react-router-dom";  
+import { getAllPosts } from "./utils/loadPosts.js";
+import { marked } from "marked";
 
 export default function BlogPage({ theme, setTheme }) {
-  const posts = [
-    {
-      title: "Exploring Data with R",
-      date: "November 2, 2025",
-      description:
-        "A quick look into how I used R to visualize public datasets and uncover surprising insights.",
-      link: "#",
-    },
-    {
-      title: "Building My Personal Website",
-      date: "October 28, 2025",
-      description:
-        "The story behind how I designed, built, and themed this site using React and TailwindCSS.",
-      link: "#",
-    },
-    {
-      title: "Docker for Data Projects",
-      date: "October 5, 2025",
-      description:
-        "How containerization helps me keep my data analysis environments clean and reproducible.",
-      link: "#",
-    },
-  ];
-
+  const posts = getAllPosts();
   return (
     <PageBackground theme={theme} lightImage={blogLight} darkImage={blogDark}>
       <div className="min-h-screen flex flex-col text-latte-text dark:text-mocha-text">
@@ -58,12 +38,12 @@ export default function BlogPage({ theme, setTheme }) {
               <p className="text-latte-subtext1 dark:text-mocha-subtext1 mb-4">
                 {post.description}
               </p>
-              <a
-                href={post.link}
+              <Link
+                to={`/blog/${post.slug}`}
                 className="text-latte-mauve dark:text-mocha-mauve hover:underline font-medium"
               >
                 Read More →
-              </a>
+              </Link>
             </article>
           ))}
         </main>

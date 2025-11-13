@@ -4,6 +4,7 @@ import HomePage from "./HomePage.jsx";
 import AboutPage from "./AboutPage.jsx";
 import BlogPage from "./BlogPage.jsx";
 import ProjectsPage from "./ProjectsPage.jsx";
+import PostPage from "./PostPage.jsx";
 
 export default function App() {
   const [theme, setTheme] = useState("system");
@@ -33,6 +34,7 @@ export default function App() {
       <Route path="/" element={<HomePage theme={theme} setTheme={setTheme} />} />
       <Route path="/about" element={<AboutPage theme={theme} setTheme={setTheme} />} />
       <Route path="/blog" element={<BlogPage theme={theme} setTheme={setTheme} />} />
+      <Route path="/blog/:slug" element={<PostPage theme={theme} />} />
       <Route path="/projects" element={<ProjectsPage theme={theme} setTheme={setTheme} />} />
     </Routes>
   );
