@@ -3,7 +3,7 @@ import PageBackground from "./PageBackground.jsx";
 import projectsLight from "./assets/backgrounds/blog-light.png";
 import projectsDark from "./assets/backgrounds/blog-dark.png";
 import { Github, ExternalLink } from "lucide-react";
-import campSearch from "./assets/photos/project/CS.png";
+import CSpic from "./assets/photos/project/CS.png";
 
 export default function ProjectsPage({ theme, setTheme }) {
   const projects = [
@@ -11,7 +11,7 @@ export default function ProjectsPage({ theme, setTheme }) {
       title: "CampSearch (WIP)",
       description:
         "A web app that helps users find and compare national park campgrounds with weather and map integrations.",
-      image: campSearch,
+      image: CSpic,
       tech: ["Python", "Flask", "Postgresql", "OpenWeather API"],
       github: "https://github.com/arrowboy47/campSearch",
       demo: "#",

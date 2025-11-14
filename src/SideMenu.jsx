@@ -32,11 +32,11 @@ export default function SideMenu({ setTheme }) {
 
       {/* === Sidebar Drawer === */}
       <aside
-        className={`fixed top-0 right-0 h-full w-64
-        bg-latte-surface0 dark:bg-mocha-surface0
-        border-l border-latte-surface2 dark:border-mocha-surface2
-        shadow-lg transform transition-transform duration-300 z-40
-        ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
+        className={`fixed top-0 right-0 h-full w-64 overflow-y-auto 
+  bg-latte-surface0 dark:bg-mocha-surface0 
+  border-l border-latte-surface2 dark:border-mocha-surface2 
+  shadow-lg transform transition-transform duration-300 z-40
+  ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
       >
         <div className="flex flex-col gap-6 p-4">
           {/* === Navigation box === */}
