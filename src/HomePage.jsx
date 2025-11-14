@@ -62,7 +62,7 @@ export default function HomePage({ theme, setTheme }) {
 
           <div className="max-w-2xl mx-auto text-center">
             <h1 className="inline-block text-5xl font-extrabold text-latte-mauve dark:text-mocha-mauve px-8 py-4 border-4 border-latte-mauve dark:border-mocha-mauve rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300">
-              Aiden&apos;s Personal Website
+              Aiden&apos;s Website
             </h1>
           </div>
         </header>
