@@ -100,7 +100,7 @@ export default function SideMenu({ setTheme }) {
               </a>
 
               <a
-                href="http://192.168.1.156:4040"
+                href="./src/assets/Aiden_Kelly_Resume_Sept_24.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-2 text-center border border-latte-surface2 dark:border-mocha-surface2 rounded-xl
@@ -108,7 +108,7 @@ export default function SideMenu({ setTheme }) {
                 hover:bg-latte-surface1 dark:hover:bg-mocha-surface1
                 text-latte-text dark:text-mocha-text transition"
               >
-                Homarr
+                Resume
               </a>
             </nav>
           </div>
