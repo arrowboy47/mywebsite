@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import MusicPlayer from "./MusicPlayer.jsx";
+import resume from "./assets/Aiden_Kelly_Resume_Sept_24.pdf";
 
 export default function SideMenu({ setTheme }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -100,7 +101,7 @@ export default function SideMenu({ setTheme }) {
               </a>
 
               <a
-                href="./src/assets/Aiden_Kelly_Resume_Sept_24.pdf"
+                href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-2 text-center border border-latte-surface2 dark:border-mocha-surface2 rounded-xl

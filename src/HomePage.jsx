@@ -22,6 +22,10 @@ import PageBackground from "./PageBackground.jsx";
 import homeLight from "./assets/backgrounds/home-light.png";
 import homeDark from "./assets/backgrounds/home-dark.png";
 
+// resume
+import resume from "./assets/Aiden_Kelly_Resume_Sept_24.pdf";
+
+
 export default function HomePage({ theme, setTheme }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -208,7 +212,7 @@ export default function HomePage({ theme, setTheme }) {
                       Last.fm
                     </a>
                     <a
-                      href="./src/assets/Aiden_Kelly_Resume_Sept_24.pdf"
+                      href={resume}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full py-2 text-center border border-latte-surface2 dark:border-mocha-surface2 rounded-xl 
