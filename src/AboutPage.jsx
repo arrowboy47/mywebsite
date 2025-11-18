@@ -45,7 +45,7 @@ export default function AboutPage({ theme, setTheme }) {
             <h2 className="text-2xl font-semibold text-latte-mauve dark:text-mocha-mauve mb-3">
               Hey, I’m Aiden Kelly 👋
             </h2>
-            <p className="text-left text-latte-subtext1 dark:text-mocha-subtext1 leading-relaxed">
+            <p className=" text-latte-subtext1 dark:text-mocha-subtext1 leading-relaxed">
               I am a data scientist who, as I mentioned before, a recent statistics graduate from Cal Poly SLO with a passion for stats, cool tech projects, and nature. I am really looking forward to starting my career in the analytics world.
               I think that stats are so important for great decision making. Numbers keep people accountable and can ground decisions in reality rather than feelings, which can lead to poor or even harmful choices. That’s why I make it a point to stay informed and use data thoughtfully in my everyday life. In order to generate good incites for a specific problem, you need to have a good understanding of the topic. That’s one of the reasons I love statistics, it allows me to explore so many different disciplines, giving me the chance to dive into new fields and continuously expand my knowledge.
             </p>
