@@ -89,10 +89,10 @@ export default function HomePage({ theme, setTheme }) {
                 />
 
                 <p className="text-latte-subtext1 dark:text-mocha-subtext1">
-                  Welcome to my portfolio + personal site! I always wanted a way
+                  Welcome to my portfolio site! I always wanted a way
                   to highlight elements about myself that I'd like to showcase
                   to the world, but most platforms like social media don't give
-                  me full creativity to do what I'd like. So the best option for
+                  me the full creativity to do what I'd like. So the best option for
                   me was to make a little website! <br /> <br />
                   I recently graduated from my undergraduate degree in
                   statistics from Cal Poly San Luis Obispo. <br /> <br />
