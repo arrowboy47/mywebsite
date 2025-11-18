@@ -48,30 +48,6 @@ export default function AboutPage({ theme, setTheme }) {
             <p className="text-left text-latte-subtext1 dark:text-mocha-subtext1 leading-relaxed">
               I am a data scientist who, as I mentioned before, a recent statistics graduate from Cal Poly SLO with a passion for stats, cool tech projects, and nature. I am really looking forward to starting my career in the analytics world.
               I think that stats are so important for great decision making. Numbers keep people accountable and can ground decisions in reality rather than feelings, which can lead to poor or even harmful choices. That’s why I make it a point to stay informed and use data thoughtfully in my everyday life. In order to generate good incites for a specific problem, you need to have a good understanding of the topic. That’s one of the reasons I love statistics, it allows me to explore so many different disciplines, giving me the chance to dive into new fields and continuously expand my knowledge.
-              <img
-                src={campingPic}
-                alt="Camping trip"
-                className="float-right ml-4 mb-2 w-48 h-auto rounded-xl shadow-md border border-latte-surface2 dark:border-mocha-surface2"
-              />
-              One way I love to explore new fields is through my hobbies. I love being out in nature and going camping, it's such a great way to reset. 
-              <br />
-              Along a similar line of resetting, I am always listening to music.
-              <img
-                src={musicPic}
-                alt="Music setup"
-                className="float-left mr-4 mb-2 w-48 h-auto rounded-xl shadow-md border border-latte-surface2 dark:border-mocha-surface2"
-              />
-              I got into music kinda late in life, but I cannot live without it
-              now. I love listening to jazz, electronic, rap, alt rock, prog
-              rock, and pop (check my Last.fm).
-              <br />
-              I also have really been obsessed with opensource software. I have been using linux for my operating system for over 5 years now, it has been such a great experience. 
-              <img
-                src={linuxPic}
-                alt="Linux desktop"
-                className="float-right ml-4 mb-2 w-48 h-auto rounded-xl shadow-md border border-latte-surface2 dark:border-mocha-surface2"
-              />
-              I have learned so much about computers and had the chance showoff my creativity through customizations. My love for it has led me down the road of self hosting! I recently set up a homeserver with all my media on it and looking to expand what I can do with it.
             </p>
           </section>
 
@@ -156,11 +132,30 @@ export default function AboutPage({ theme, setTheme }) {
               Interests
             </h2>
             <p className="text-latte-subtext1 dark:text-mocha-subtext1 leading-relaxed">
-              Outside of work, I enjoy experimenting with modded hardware like
-              custom iPods and Nintendo Switch consoles, exploring music
-              recommendations through Last.fm, and photographing small details
-              that often go unnoticed. I also love playing story-driven games,
-              reading sci-fi novels, and collecting odd tech from thrift stores.
+              <img
+                src={campingPic}
+                alt="Camping trip"
+                className="float-right ml-4 mb-2 w-48 h-auto rounded-xl shadow-md border border-latte-surface2 dark:border-mocha-surface2"
+              />
+              One way I love to explore new fields is through my hobbies. I love being out in nature and going camping, it's such a great way to reset. 
+              <br />
+              Along a similar line of resetting, I am always listening to music.
+              <img
+                src={musicPic}
+                alt="Music setup"
+                className="float-left mr-4 mb-2 w-48 h-auto rounded-xl shadow-md border border-latte-surface2 dark:border-mocha-surface2"
+              />
+              I got into music kinda late in life, but I cannot live without it
+              now. I love listening to jazz, electronic, rap, alt rock, prog
+              rock, and pop (check my Last.fm).
+              <br />
+              I also have really been obsessed with opensource software. I have been using linux for my operating system for over 5 years now, it has been such a great experience. 
+              <img
+                src={linuxPic}
+                alt="Linux desktop"
+                className="float-right ml-4 mb-2 w-48 h-auto rounded-xl shadow-md border border-latte-surface2 dark:border-mocha-surface2"
+              />
+              I have learned so much about computers and had the chance showoff my creativity through customizations. My love for it has led me down the road of self hosting! I recently set up a homeserver with all my media on it and looking to expand what I can do with it.
             </p>
           </section>
 
