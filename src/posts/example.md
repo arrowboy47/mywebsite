@@ -1,17 +1,16 @@
 ---
 title: "Building My Personal Website"
-date: "2025-10-28"
+date: "2025-11-10"
 description: "How I designed, built, and themed this portfolio using React, Tailwind, and Catppuccin."
 ---
 
-This site started as a simple idea — a personal hub that combines **professional projects** and **personal interests**.
+I got the idea to create this site to showcase projects that I am working on and anything else interesting. Thought it was a cool way to combine **professional projects** and **personal interests**.
 
 ### What I used
 - React for the frontend
 - TailwindCSS for styling
 - GitHub Pages for hosting
 
-I also used **Vite** for blazing-fast dev builds.
+I also used **Vite** for dev builds.
 
-You can find the code on [GitHub](https://github.com/arrowboy47).
-
+Repo: [GitHub](https://github.com/arrowboy47/).
