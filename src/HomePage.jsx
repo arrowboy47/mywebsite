@@ -96,7 +96,7 @@ export default function HomePage({ theme, setTheme }) {
                   me was to make a little website! <br /> <br />
                   I recently graduated from my undergraduate degree in
                   statistics from Cal Poly San Luis Obispo. <br /> <br />
-                  I am currently in a gap year, I'm using this time to look for
+                  I'm using this time to look for
                   jobs, explore projects, and learn things that I didn't have
                   the time to do in school.
                   <br /> <br />
