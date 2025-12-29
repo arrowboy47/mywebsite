@@ -1,6 +1,6 @@
 ---
 title: Kobo Ereader dashboard
-date: 2025-12-23
+date: "2025-12-23"
 description: How I modified a koreader dashboard project to personalize it to me
 ---
 The idea for this project started when I was looking on **Pinterest** and saw one of those **Eink display** dashboards that tend to show people’s home devices, weather, and stuff like this. 
