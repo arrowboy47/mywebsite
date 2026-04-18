@@ -1,10 +1,8 @@
 ---
 title: "Coffee Site for My Girlfriend's Birthday"
 date: "2026-04-14"
-description: "A small personal project — a coffee log and tracker I built as a birthday gift."
+description: "A small personal project — a coffee ordering siteI built as a birthday gift."
 ---
-
-This one started with a birthday and ended with a surprisingly fun little web project.
 
 My girlfriend is really into coffee, we used to go out ALL the time for coffee and we both wanted to stop spending sm on it. For her birthday I wanted to come up with a solution for her, where her money concious mind gets to be put to ease and she still gets to have yummy coffee.
 
