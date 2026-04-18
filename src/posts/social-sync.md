@@ -1,6 +1,6 @@
 ---
 title: "An Idea: 3-Way Video Sync for Social Media"
-date: "2026-03-14"
+date: "2026-04-16"
 description: "A half-baked project idea for uploading one video and having it auto-publish to YouTube, Instagram, TikTok, and Facebook simultaneously."
 ---
 

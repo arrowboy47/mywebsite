@@ -1,6 +1,6 @@
 ---
 title: "My Homelab Setup"
-date: "2026-02-15"
+date: "2026-04-15"
 description: "An overview of thebigbox — my home server running Ubuntu 24.04, what's on it, and how I access it remotely."
 ---
 
@@ -34,7 +34,6 @@ Everything runs in Docker containers managed through **Portainer**. The main sta
 - **Nextcloud** — personal cloud storage (Google Drive replacement)
 - **PhotoPrism** — photo indexing and search
 - **Homarr** — dashboard for all services
-- **Funkwhale** — music server
 
 <!-- SCREENSHOT: Homarr dashboard showing all services -->
 

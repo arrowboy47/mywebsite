@@ -1,7 +1,7 @@
 ---
 title: "Using Obsidian to Actually Learn Math"
 date: "2026-04-10"
-description: "How taking notes in Obsidian changed the way I study statistics and machine learning — and why it actually sticks now."
+description: "How taking notes in Obsidian changed the way I study statistics and machine learning (Most yt video description ever put to keybaord)."
 ---
 
 I have a Statistics degree. That doesn't mean I remember everything. Going into data science and machine learning means revisiting a lot of math I learned years ago, and this time I wanted it to actually stick.

@@ -1,6 +1,6 @@
 ---
 title: "OpenClaw: My Personal AI System Design"
-date: "2026-01-18"
+date: "2026-04-14"
 description: "A full-spec personal AI system called OpenClaw with a primary agent named Jadu — what it does, how it's structured, and why I'm building it."
 ---
 
