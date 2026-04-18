@@ -4,7 +4,9 @@ import projectsLight from "./assets/backgrounds/blog-light.png";
 import projectsDark from "./assets/backgrounds/blog-dark.png";
 import { Github, ExternalLink } from "lucide-react";
 import CSpic from "./assets/photos/project/CS.png";
-import LinuxPic from "./assets/photos/linux.png";
+import KoboPic from "./assets/photos/project/kobodashboard.png";
+import ServerPic from "./assets/photos/project/serverirl.PNG";
+import HomarrPic from "./assets/photos/project/HomarrDB.png";
 
 export default function ProjectsPage({ theme, setTheme }) {
   const projects = [
@@ -23,14 +25,14 @@ export default function ProjectsPage({ theme, setTheme }) {
         "A personal coffee journal web app built as a birthday gift for my girlfriend. Log beans, tasting notes, ratings, and get email notifications when new entries are added.",
       image: null,
       tech: ["React", "Node.js", "Email API"],
-      github: "https://github.com/arrowboy47/",
+      github: "https://github.com/arrowboy47/coffee_orders",
       demo: "#",
     },
     {
       title: "Kobo Dashboard",
       description:
         "A customized E-ink dashboard running on a Kobo Sage e-reader. Displays Google Calendar events, sunrise/sunset times, moon phase, 2026 goals, and rotating images — all served from a self-hosted Docker container.",
-      image: null,
+      image: KoboPic,
       tech: ["Docker", "HTML/CSS", "Google Calendar API", "RackNerd VPS"],
       github: "https://github.com/arrowboy47/kobo-dashboard",
       demo: "http://104.168.7.21:3333/today.png",
@@ -39,9 +41,9 @@ export default function ProjectsPage({ theme, setTheme }) {
       title: "Homelab — thebigbox",
       description:
         "A self-hosted media and services server built on a Dell OptiPlex 9010 MT running Ubuntu 24.04. Runs Jellyfin, Radarr, Sonarr, Nextcloud, PhotoPrism, and more — all containerized with Docker and accessible remotely via WireGuard VPN.",
-      image: LinuxPic,
+      image: ServerPic,
       tech: ["Ubuntu 24.04", "Docker", "WireGuard", "Jellyfin", "Portainer"],
-      github: "https://github.com/arrowboy47/",
+      github: null,
       demo: "#",
     },
   ];
@@ -106,15 +108,17 @@ export default function ProjectsPage({ theme, setTheme }) {
                 </p>
 
                 {/* Link to GitHub */}
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-latte-mauve dark:text-mocha-mauve font-semibold hover:underline"
-                >
-                  <ExternalLink className="w-5 h-5" />
-                  Project Repository
-                </a>
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-latte-mauve dark:text-mocha-mauve font-semibold hover:underline"
+                  >
+                    <ExternalLink className="w-5 h-5" />
+                    Project Repository
+                  </a>
+                )}
               </div>
             </div>
           ))}

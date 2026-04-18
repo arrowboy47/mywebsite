@@ -33,7 +33,7 @@ export default function PostPage({ theme }) {
           </p>
         </header>
 
-        <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6 prose dark:prose-invert">
+        <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6 prose prose-latte dark:prose-invert dark:prose-mocha prose-headings:text-latte-mauve dark:prose-headings:text-mocha-mauve prose-a:text-latte-mauve dark:prose-a:text-mocha-mauve prose-code:text-latte-mauve dark:prose-code:text-mocha-mauve prose-strong:text-latte-text dark:prose-strong:text-mocha-text prose-li:text-latte-text dark:prose-li:text-mocha-text prose-p:text-latte-text dark:prose-p:text-mocha-text">
           <div dangerouslySetInnerHTML={{ __html: marked(post.content) }} />
         </main>
 

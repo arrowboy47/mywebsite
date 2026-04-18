@@ -16,6 +16,8 @@ Here's a quick summary of what's been going on since the last post:
 
 **Kobo Dashboard** — finished and deployed. My Kobo Sage sits on my desk and shows a live dashboard with calendar events, sunrise/sunset, moon phase, and my 2026 goals. [You can view it live.](http://104.168.7.21:3333/)
 
+![Kobo dashboard](/posts/kobodashboard.png)
+
 **Learning** — been doing some learning here and there. Some stats review on things like **time series** and some ML material for a **work project**. I've primarily been working on trying to get a hand on agentic AI. I got a lot of the practical material down, but I really want to get into more deep learning fundamentals. All of it going into the Obsidian vault.
 
 **This site** — did a cleanup pass, added a bunch of blog posts, and generally made it look like I've been alive. lol

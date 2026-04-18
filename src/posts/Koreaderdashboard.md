@@ -14,4 +14,6 @@ Given that it was just a website being displayed, I decided to **fork the reposi
 
 I finally got **a server** from rack nerd Where I could easily host this website and never have to run the container from my laptop and constantly update IP address addresses for each new network I go onto in The config file. 
 
-Here is my finalized dashboard (there are still some tweaks to be made but you can view it [here](http://104.168.7.21:3333/today.png) if you want to check it out and if you have any suggestions email me or open a report on my [repo](https://github.com/arrowboy47/kobo-dashboard)
+Here is my finalized dashboard (there are still some tweaks to be made but you can view it [here](http://104.168.7.21:3333/today.png) if you want to check it out and if you have any suggestions email me or open a report on my [repo](https://github.com/arrowboy47/kobo-dashboard))
+
+![Kobo dashboard on e-reader](/posts/kobodashboard.png)

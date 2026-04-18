@@ -17,7 +17,7 @@ Over the past year or so I've been building out a home server that I call **theb
 
 I also run a VPS from RackNerd for services that need a public IP.
 
-<!-- SCREENSHOT: thebigbox / server rack or desk setup -->
+![thebigbox server](/posts/serverirl.PNG)
 
 ## What's Running on It
 
@@ -35,7 +35,7 @@ Everything runs in Docker containers managed through **Portainer**. The main sta
 - **PhotoPrism** — photo indexing and search
 - **Homarr** — dashboard for all services
 
-<!-- SCREENSHOT: Homarr dashboard showing all services -->
+![Homarr dashboard](/posts/HomarrDB.png)
 
 ## Remote Access
 
@@ -47,7 +47,7 @@ Getting into the server from outside the home network was the trickiest part. Th
 
 When I'm away from home I connect via WireGuard on my phone and get full access to every service as if I'm on the local network. No port 80/443 exposed publicly, no reverse proxy drama.
 
-<!-- SCREENSHOT: WireGuard peer status or connection confirmation -->
+![WireGuard peers up](/posts/wireguardup.png)
 
 ## Lessons Learned
 
