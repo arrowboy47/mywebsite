@@ -23,7 +23,7 @@ import homeLight from "./assets/backgrounds/home-light.png";
 import homeDark from "./assets/backgrounds/home-dark.png";
 
 // resume
-import resume from "./assets/Aiden_Kelly_Resume_Sept_24.pdf";
+import resume from "./assets/Aiden_Kelly_Resume_April_2026.pdf";
 
 
 export default function HomePage({ theme, setTheme }) {

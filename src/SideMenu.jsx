@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import MusicPlayer from "./MusicPlayer.jsx";
-import resume from "./assets/Aiden_Kelly_Resume_Sept_24.pdf";
+import resume from "./assets/Aiden_Kelly_Resume_April_2026.pdf";
 
 export default function SideMenu({ setTheme }) {
   const [menuOpen, setMenuOpen] = useState(false);

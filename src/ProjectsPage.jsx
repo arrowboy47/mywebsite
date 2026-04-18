@@ -20,11 +20,11 @@ export default function ProjectsPage({ theme, setTheme }) {
       demo: "#",
     },
     {
-      title: "Coffee Log",
+      title: "Coffee Ordering Site",
       description:
-        "A personal coffee journal web app built as a birthday gift for my girlfriend. Log beans, tasting notes, ratings, and get email notifications when new entries are added.",
+        "A birthday gift for my girlfriend — a personal coffee ordering site where she picks drinks from a menu I built, hits order, and it sends me an email with what she wants. Includes an ingredients list and cost-per-drink so she can see how much she's saving vs. going out.",
       image: null,
-      tech: ["React", "Node.js", "Email API"],
+      tech: ["HTML/CSS/JS", "EmailJS", "Docker"],
       github: "https://github.com/arrowboy47/coffee_orders",
       demo: "#",
     },
