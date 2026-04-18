@@ -4,6 +4,7 @@ import projectsLight from "./assets/backgrounds/blog-light.png";
 import projectsDark from "./assets/backgrounds/blog-dark.png";
 import { Github, ExternalLink } from "lucide-react";
 import CSpic from "./assets/photos/project/CS.png";
+import LinuxPic from "./assets/photos/linux.png";
 
 export default function ProjectsPage({ theme, setTheme }) {
   const projects = [
@@ -14,6 +15,33 @@ export default function ProjectsPage({ theme, setTheme }) {
       image: CSpic,
       tech: ["Python", "Flask", "Postgresql", "OpenWeather API"],
       github: "https://github.com/arrowboy47/campSearch",
+      demo: "#",
+    },
+    {
+      title: "Coffee Log",
+      description:
+        "A personal coffee journal web app built as a birthday gift for my girlfriend. Log beans, tasting notes, ratings, and get email notifications when new entries are added.",
+      image: null,
+      tech: ["React", "Node.js", "Email API"],
+      github: "https://github.com/arrowboy47/",
+      demo: "#",
+    },
+    {
+      title: "Kobo Dashboard",
+      description:
+        "A customized E-ink dashboard running on a Kobo Sage e-reader. Displays Google Calendar events, sunrise/sunset times, moon phase, 2026 goals, and rotating images — all served from a self-hosted Docker container.",
+      image: null,
+      tech: ["Docker", "HTML/CSS", "Google Calendar API", "RackNerd VPS"],
+      github: "https://github.com/arrowboy47/kobo-dashboard",
+      demo: "http://104.168.7.21:3333/today.png",
+    },
+    {
+      title: "Homelab — thebigbox",
+      description:
+        "A self-hosted media and services server built on a Dell OptiPlex 9010 MT running Ubuntu 24.04. Runs Jellyfin, Radarr, Sonarr, Nextcloud, PhotoPrism, and more — all containerized with Docker and accessible remotely via WireGuard VPN.",
+      image: LinuxPic,
+      tech: ["Ubuntu 24.04", "Docker", "WireGuard", "Jellyfin", "Portainer"],
+      github: "https://github.com/arrowboy47/",
       demo: "#",
     },
   ];
@@ -47,11 +75,17 @@ export default function ProjectsPage({ theme, setTheme }) {
             >
               {/* === Project Image === */}
               <div className="w-full md:w-1/2 rounded-xl overflow-hidden shadow-sm">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-64 object-cover"
-                />
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-64 object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-64 flex items-center justify-center bg-latte-surface1 dark:bg-mocha-surface1 text-latte-subtext0 dark:text-mocha-subtext0 text-sm italic rounded-xl">
+                    Screenshot coming soon
+                  </div>
+                )}
               </div>
 
               {/* === Project Info === */}
