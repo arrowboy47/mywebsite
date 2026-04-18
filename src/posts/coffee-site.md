@@ -1,30 +1,24 @@
 ---
-title: "I Built a Coffee Site for My Girlfriend's Birthday"
-date: "2026-03-28"
-description: "A small personal project — a coffee log and tracker I built as a birthday gift. It sends emails too."
+title: "Coffee Site for My Girlfriend's Birthday"
+date: "2026-04-14"
+description: "A small personal project — a coffee log and tracker I built as a birthday gift."
 ---
 
 This one started with a birthday and ended with a surprisingly fun little web project.
 
-My girlfriend is really into coffee — tracking beans she's tried, where they're from, tasting notes, that kind of thing. For her birthday I wanted to make something that felt personal and actually useful, not just another gift card.
+My girlfriend is really into coffee, we used to go out ALL the time for coffee and we both wanted to stop spending sm on it. For her birthday I wanted to come up with a solution for her, where her money concious mind gets to be put to ease and she still gets to have yummy coffee.
 
 ## The Idea
 
-The goal was a simple coffee log: you enter a new bean, add some notes, and it builds up a record over time. Think of it like a personal coffee journal but as a web app.
+Create a list of recipes that I come up with (or more realistically learn from youtube, instagram, or tiktok) and let her order them like its from a real cafe. Then, when she "orders it" it sends me an email of the drinks she wants.
+
+It eventually got expanded on and I added other features like an ingredients list and a cost per drink (how much it was to make each). This way she can see how much she is saving
 
 <!-- SCREENSHOT: coffee site homepage / entry form -->
 
 ## How It Works
 
-The core is a form where you can log:
 
-- Bean name and roaster
-- Origin (country/region)
-- Roast level
-- Tasting notes (freeform)
-- Rating
-
-Entries get stored and displayed in a list, sorted by date. Nothing fancy — the point was simplicity so it actually gets used.
 
 <!-- SCREENSHOT: coffee log entry list -->
 

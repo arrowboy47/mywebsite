@@ -1,10 +1,10 @@
 ---
 title: "Planning an Agentic AI Homelab Maintainer"
-date: "2026-02-01"
+date: "2026-04-11"
 description: "What a lightweight AI agent that manages a homelab could actually look like — scoped to be useful, not overkill."
 ---
 
-I've been thinking a lot about agentic AI systems lately — AI that doesn't just answer questions but takes actions on your behalf. My homelab is a natural target for this kind of thing. I spend more time on maintenance tasks than I'd like, and a lot of it is repetitive.
+I've been thinking a lot about agentic AI systems lately, AI that doesn't just answer questions but takes actions on your behalf. My homelab is a natural target for this kind of thing. I spend more time on maintenance tasks than I'd like, and a lot of it is repetitive.
 
 This post is a design sketch, not a finished system. But thinking through what it *could* do is useful before building anything.
 
@@ -17,11 +17,10 @@ The scope I care about:
 - **WireGuard peer status** — are my phone and laptop still reachable as VPN peers?
 - **Log triage** — surface errors that need attention without me SSHing in and scrolling
 
-That's the core. Everything else is nice-to-have.
 
 ## The Architecture I'd Use
 
-Lightweight means no massive LLM running locally for everything. My plan:
+Lightweight. Sadly I dont have $2k-$3k to spare on building a fully spec'd out AI server (though you have no idea how badly I want one). This means no massive LLM running locally for everything. I was using my claude code subscription within openclaw, but now Anthropic has pulled support :(, so now I'm high and dry. I hope to maybe get a mac mini. My plan:
 
 1. **Monitoring layer** — a small script (or Uptime Kuma) checks each service on a cron schedule, writes a status file
 2. **Alert layer** — if a check fails, send a Telegram message. Simple, no AI needed yet.
@@ -33,9 +32,9 @@ The LLM doesn't need to run constantly. It only gets invoked when I ask it somet
 
 ## The Model
 
-For local use I'd run this on **Ollama** with `qwen2.5:14b` on my AI node. Small enough to be fast, capable enough to parse logs and explain errors in plain English.
+For local use I'd run this on **Ollama** with `gemma4:E4B` on my AI node. 
 
-For tasks that need to reach the internet or make external API calls, route to a hosted model. Keep the expensive calls rare.
+For tasks that need to reach the internet or make external API calls, route to a hosted model. 
 
 ## What I'd Automate vs. Keep Manual
 
