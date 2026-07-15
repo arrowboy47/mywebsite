@@ -11,6 +11,33 @@ import HomarrPic from "./assets/photos/project/HomarrDB.png";
 export default function ProjectsPage({ theme, setTheme }) {
   const projects = [
     {
+      title: "Homelab — thebigbox",
+      description:
+        "My self-hosted everything-server: a Dell OptiPlex 9010 MT running Ubuntu 24.04 with ~30 Docker containers, reachable from anywhere over a self-hosted WireGuard VPN. Media: Jellyfin for movies/TV, Kima for streaming my music library to my phone through a reverse proxy, Audiobookshelf for audiobooks, Kavita for ebooks and manga, Bookshelf for reading tracking, and qBittorrent for downloads. Photos and files: Immich as my Google Photos replacement (with ML search and face recognition) and Nextcloud for file sync. Infrastructure: Pi-hole handling DNS ad-blocking for the whole network, Nginx Proxy Manager for routing and TLS, CouchDB powering live sync of my Obsidian vault across devices, and Homarr + Dashdot as dashboards. It also hosts the data layer for my AI projects — a Postgres personal data warehouse with a Dash dashboard, and Honcho, the memory backend for my personal AI agent. The whole box is watched by a monitoring daemon I built that auto-restarts failed services.",
+      image: ServerPic,
+      tech: ["Ubuntu 24.04", "Docker", "WireGuard", "Jellyfin", "Immich", "Nextcloud", "Pi-hole", "Postgres"],
+      github: null,
+      demo: "#",
+    },
+    {
+      title: "Jadu — Personal AI Agent",
+      description:
+        "My always-on personal AI agent — the evolution of the OpenClaw design I blogged about in April. Jadu runs on the open-source Hermes agent runtime on a Mac Mini M4 and I talk to it over Telegram from anywhere. It runs local-first inference (a 31B model via Ollama on the M4's Neural Engine, with a smaller fallback model served by llama.cpp), so day-to-day usage costs nothing. It has a curated library of 50+ skills — including custom ones I wrote for nightly planning, syncing my personal data warehouse, and keeping my infrastructure documentation up to date — plus scheduled cron routines that run unattended: a nightly planner nudge, a 3am data sync, daily Obsidian housekeeping, and weekly memory cleanup. For long-term memory it uses Honcho, a user-modeling layer running on my homelab that builds a deepening model of me across conversations. It reads and writes my Obsidian vault, manages my calendar and email through Google Workspace, and hands bigger coding jobs off to a Claude Code build pipeline.",
+      image: null,
+      tech: ["Python", "Hermes Agent", "Ollama", "Telegram", "Honcho", "Obsidian"],
+      github: null,
+      demo: "#",
+    },
+    {
+      title: "Job Applying Agent (Current Project)",
+      description:
+        "An AI agent that deletes the boring 80% of job hunting. I send a search from Telegram ('senior data roles, remote US'), and it scans postings across 20+ applicant tracking systems (Greenhouse, Lever, Ashby, Workday and more), scores each posting against my resume using a structured evaluation framework, and keeps the best matches. For each one it generates a tailored resume and cover letter as Google Docs and logs everything — scores, links, status — to a Google Sheet tracker. I review the drafts, edit what I want, and apply manually through the logged URLs; the agent never submits anything on my behalf. The interesting part is the feedback loop: on each new run it diffs my hand-edits against its original drafts and distills the patterns into guidance for the next generation round, so the drafts keep getting closer to my voice.",
+      image: null,
+      tech: ["Claude Code", "Node.js", "Google Docs/Sheets API", "Telegram"],
+      github: "https://github.com/arrowboy47/career-ops",
+      demo: "#",
+    },
+    {
       title: "CampSearch (WIP)",
       description:
         "A web app that helps users find and compare national park campgrounds with weather and map integrations.",
@@ -36,15 +63,6 @@ export default function ProjectsPage({ theme, setTheme }) {
       tech: ["Docker", "HTML/CSS", "Google Calendar API", "RackNerd VPS"],
       github: "https://github.com/arrowboy47/kobo-dashboard",
       demo: "http://104.168.7.21:3333/today.png",
-    },
-    {
-      title: "Homelab — thebigbox",
-      description:
-        "A self-hosted media and services server built on a Dell OptiPlex 9010 MT running Ubuntu 24.04. Runs Jellyfin, Radarr, Sonarr, Nextcloud, PhotoPrism, and more — all containerized with Docker and accessible remotely via WireGuard VPN.",
-      image: ServerPic,
-      tech: ["Ubuntu 24.04", "Docker", "WireGuard", "Jellyfin", "Portainer"],
-      github: null,
-      demo: "#",
     },
   ];
 
