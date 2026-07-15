@@ -89,18 +89,6 @@ export default function SideMenu({ setTheme }) {
 
               {/* External links */}
               <a
-                href="https://www.last.fm/user/SoyMilk123456"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full py-2 text-center border border-latte-surface2 dark:border-mocha-surface2 rounded-xl
-                bg-latte-surface0 dark:bg-mocha-surface0
-                hover:bg-latte-surface1 dark:hover:bg-mocha-surface1
-                text-latte-text dark:text-mocha-text transition"
-              >
-                Last.fm
-              </a>
-
-              <a
                 href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
