@@ -5,7 +5,7 @@ import projectsDark from "./assets/backgrounds/blog-dark.png";
 import { Github, ExternalLink } from "lucide-react";
 import CSpic from "./assets/photos/project/CS.png";
 import KoboPic from "./assets/photos/project/kobodashboard.png";
-import ServerPic from "./assets/photos/project/serverirl.PNG";
+import ServerPic from "./assets/photos/project/homelab.jpg";
 import HomarrPic from "./assets/photos/project/HomarrDB.png";
 import JaduPic from "./assets/photos/project/jadu-agent.jpg";
 import JobAgentPic from "./assets/photos/project/job-agent.jpeg";
