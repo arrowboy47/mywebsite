@@ -7,6 +7,9 @@ import CSpic from "./assets/photos/project/CS.png";
 import KoboPic from "./assets/photos/project/kobodashboard.png";
 import ServerPic from "./assets/photos/project/serverirl.PNG";
 import HomarrPic from "./assets/photos/project/HomarrDB.png";
+import JaduPic from "./assets/photos/project/jadu-agent.jpg";
+import JobAgentPic from "./assets/photos/project/job-agent.jpeg";
+import CoffeePic from "./assets/photos/project/coffee-site.png";
 
 export default function ProjectsPage({ theme, setTheme }) {
   const projects = [
@@ -23,7 +26,7 @@ export default function ProjectsPage({ theme, setTheme }) {
       title: "Jadu — Personal AI Agent",
       description:
         "My always-on personal AI agent — the evolution of the OpenClaw design I blogged about in April. Jadu runs on the open-source Hermes agent runtime on a Mac Mini M4 and I talk to it over Telegram from anywhere. It runs local-first inference (a 31B model via Ollama on the M4's Neural Engine, with a smaller fallback model served by llama.cpp), so day-to-day usage costs nothing. It has a curated library of 50+ skills — including custom ones I wrote for nightly planning, syncing my personal data warehouse, and keeping my infrastructure documentation up to date — plus scheduled cron routines that run unattended: a nightly planner nudge, a 3am data sync, daily Obsidian housekeeping, and weekly memory cleanup. For long-term memory it uses Honcho, a user-modeling layer running on my homelab that builds a deepening model of me across conversations. It reads and writes my Obsidian vault, manages my calendar and email through Google Workspace, and hands bigger coding jobs off to a Claude Code build pipeline.",
-      image: null,
+      image: JaduPic,
       tech: ["Python", "Hermes Agent", "Ollama", "Telegram", "Honcho", "Obsidian"],
       github: null,
       demo: "#",
@@ -32,7 +35,7 @@ export default function ProjectsPage({ theme, setTheme }) {
       title: "Job Applying Agent (Current Project)",
       description:
         "An AI agent that deletes the boring 80% of job hunting. I send a search from Telegram ('senior data roles, remote US'), and it scans postings across 20+ applicant tracking systems (Greenhouse, Lever, Ashby, Workday and more), scores each posting against my resume using a structured evaluation framework, and keeps the best matches. For each one it generates a tailored resume and cover letter as Google Docs and logs everything — scores, links, status — to a Google Sheet tracker. I review the drafts, edit what I want, and apply manually through the logged URLs; the agent never submits anything on my behalf. The interesting part is the feedback loop: on each new run it diffs my hand-edits against its original drafts and distills the patterns into guidance for the next generation round, so the drafts keep getting closer to my voice.",
-      image: null,
+      image: JobAgentPic,
       tech: ["Claude Code", "Node.js", "Google Docs/Sheets API", "Telegram"],
       github: "https://github.com/arrowboy47/career-ops",
       demo: "#",
@@ -50,7 +53,7 @@ export default function ProjectsPage({ theme, setTheme }) {
       title: "Coffee Ordering Site",
       description:
         "A birthday gift for my girlfriend — a personal coffee ordering site where she picks drinks from a menu I built, hits order, and it sends me an email with what she wants. Includes an ingredients list and cost-per-drink so she can see how much she's saving vs. going out.",
-      image: null,
+      image: CoffeePic,
       tech: ["HTML/CSS/JS", "EmailJS", "Docker"],
       github: "https://github.com/arrowboy47/coffee_orders",
       demo: "#",
