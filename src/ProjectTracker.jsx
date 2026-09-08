@@ -9,8 +9,8 @@ export default function ProjectTracker() {
     daysSincePush: null,
   });
 
-  const repoOwner = "arrowboy47"; 
-  const repoName = "career-ops"; 
+  const repoOwner = "arrowboy47";
+  const repoName = "campSearch";
 
   const githubRepoUrl = `https://api.github.com/repos/${repoOwner}/${repoName}`;
   const githubCommitsUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/commits`;

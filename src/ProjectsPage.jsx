@@ -3,7 +3,8 @@ import PageBackground from "./PageBackground.jsx";
 import projectsLight from "./assets/backgrounds/blog-light.png";
 import projectsDark from "./assets/backgrounds/blog-dark.png";
 import { Github, ExternalLink } from "lucide-react";
-import CSpic from "./assets/photos/project/CS.png";
+import CSpic from "./assets/photos/project/campsearch-home.png";
+import RecipePic from "./assets/photos/project/recipe-swipe.png";
 import KoboPic from "./assets/photos/project/kobodashboard.png";
 import ServerPic from "./assets/photos/project/homelab.jpg";
 import HomarrPic from "./assets/photos/project/HomarrDB.png";
@@ -32,7 +33,7 @@ export default function ProjectsPage({ theme, setTheme }) {
       demo: "#",
     },
     {
-      title: "Job Applying Agent (Current Project)",
+      title: "Job Applying Agent",
       description:
         "An AI agent that deletes the boring 80% of job hunting. I send a search from Telegram ('senior data roles, remote US'), and it scans postings across 20+ applicant tracking systems (Greenhouse, Lever, Ashby, Workday and more), scores each posting against my resume using a structured evaluation framework, and keeps the best matches. For each one it generates a tailored resume and cover letter as Google Docs and logs everything — scores, links, status — to a Google Sheet tracker. I review the drafts, edit what I want, and apply manually through the logged URLs; the agent never submits anything on my behalf. The interesting part is the feedback loop: on each new run it diffs my hand-edits against its original drafts and distills the patterns into guidance for the next generation round, so the drafts keep getting closer to my voice.",
       image: JobAgentPic,
@@ -41,12 +42,21 @@ export default function ProjectsPage({ theme, setTheme }) {
       demo: "#",
     },
     {
-      title: "CampSearch (WIP)",
+      title: "CampSearch (Current Project)",
       description:
-        "A web app that helps users find and compare national park campgrounds with weather and map integrations.",
+        "A Flask app for finding a place to camp in California. It searches ~2,440 campsites scraped from the Forest Service, Recreation.gov, ReserveCalifornia, and The Dyrt — national forests, national and state parks, BLM land, and dispersed sites — with faceted filters on terrain, elevation, water, toilets, activities, fee, and open/closed status, plus fuzzy name search on top. Each campsite page carries a per-day weather forecast for your trip dates, nearby AllTrails hikes, and driving distance from your saved home address (or your device location if you're far from home). There's a Leaflet map of every site, a 'campsites near you' carousel on the homepage, and optional accounts for saving sites and building collections. Behind it is a data pipeline of idempotent, logged scrapers feeding a containerized Postgres, refreshed on a schedule — weather daily, everything else weekly.",
       image: CSpic,
-      tech: ["Python", "Flask", "Postgresql", "OpenWeather API"],
+      tech: ["Python", "Flask", "PostgreSQL", "Docker", "Leaflet", "OpenWeather API", "rapidfuzz"],
       github: "https://github.com/arrowboy47/campSearch",
+      demo: "#",
+    },
+    {
+      title: "Recipe Pipeline",
+      description:
+        "A pipeline that turns ad-heavy recipe blogs into a clean self-hosted cookbook. It harvests ~30 curated vegan and vegetarian sites through their WordPress REST APIs or sitemaps, extracts the schema.org recipe block from each page, canonicalizes and de-duplicates the URLs against a reject blacklist, and stages every survivor as a JSON record plus a hero image. Then a Tinder-style PWA — FastAPI backend, no-build vanilla JS frontend, Catppuccin theme — turns the staging folder into a deck of swipeable cards: right imports the recipe into Mealie via its stored JSON-LD, left blacklists it, up shows the full method before deciding. A nightly job parses ingredient strings and applies diet, course, and keyword tags. Runs in a container on the homelab, LAN-only, with a dry-run mode so a dev copy can't write to the real library.",
+      image: RecipePic,
+      tech: ["Python", "FastAPI", "Docker", "Mealie API", "schema.org JSON-LD", "PWA"],
+      github: null,
       demo: "#",
     },
     {
