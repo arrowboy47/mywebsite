@@ -16,7 +16,7 @@ The HP Z4 G4 is a tower workstation I bought used: i7-9800X, 32 GB RAM, a 500 GB
 
 The plan was to move my entire agent runtime from the Mac onto this box. The Mac Mini had been the AI core — Hermes gateway, llama.cpp, Ollama, the Obsidian vault via LiveSync — and it was gone. What survived was a verified backup sitting on thebigbox at `/media/backups/macmini-2026-08-07/`, with the home directory, the Hermes database, encrypted secrets, and manifests.
 
-The rebuild went in phases. Base OS was Fedora KDE Plasma, which gave me `dnf` and normal kernel modules without the rpm-ostree friction that would have complicated GPU work. I reused the old Mac's IP address, 192.168.1.158, on purpose — Honcho, the auxiliary model configs, monitoring, and split-horizon DNS entries all pointed at that address, so reusing it meant none of them needed changing. That decision turned out to be load-bearing.
+The rebuild went in phases. Base OS was Fedora KDE Plasma, which gave me `dnf` and normal kernel modules without the rpm-ostree friction that would have complicated GPU work. I reused the old Mac's IP address on purpose — Honcho, the auxiliary model configs, monitoring, and split-horizon DNS entries all pointed at that address, so reusing it meant none of them needed changing. That decision turned out to be load-bearing.
 
 The GPUs took some thought. The GT 710 is a Kepler card that needs the legacy 470 NVIDIA driver branch, which fights Fedora's current kernels. Since it only pushes a desktop, I left it on nouveau and didn't fight it. The V620 is handled by the in-tree `amdgpu` kernel module — no separate driver install needed.
 
